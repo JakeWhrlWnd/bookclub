@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato&display=swap');
+
+:root {
+  --brand-lavendar: #E2CFEA;
+  --brand-med-purple: #A06CD5;
+  --brand-purple: #6247AA;
+  --brand-blue: #102B3F;
+  --brand-dark: #062726;
+  --primary-font: 'Bree Serif', serif;
+  --secondary-font: 'Lato', sans-serif; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    border: 1px solid red;
+}
+
+body {
+    background-color: #EFF;
+    color: var(--brand-dark, darkslategrey);
+
+    font-family: var(--primary-font, Times, "Times New Roman", Georgia, system-ui, serif);
+}
+
+.page-container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.page-header {
+    background-color: var(--brand-purple, purple);
+    color: #EFF;
+
+    padding: 1em;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-logo-container {
+    width: 25em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile-buttons {
+    width: 25em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookClub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- This element contains the rest of the elements of the page -->
+    <div id="page-container" class="container">
+
+        <header id="page-header" class="page-header">
+            <div id="site-logo-container" class="site-logo-container">
+                <img src="" alt="">
+                <h1>BookClub</h1>
+            </div>
+            <div id="profile-buttons" class="profile-buttons">
+                <div id="user-image" class="user-image header-button">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="#EFF" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
+                    </svg>
+                </div>
+                <div id="like-button" class="like-button header-button">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="#EFF" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
+                    </svg>
+                </div>
+                <div id="message-button" class="message-button header-button">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="#EFF" d="M17,12V3A1,1 0 0,0 16,2H3A1,1 0 0,0 2,3V17L6,13H16A1,1 0 0,0 17,12M21,6H19V15H6V17A1,1 0 0,0 7,18H18L22,22V7A1,1 0 0,0 21,6Z" />
+                    </svg>
+                </div>
+            </div>
+        </header>
+        
+        <main id="page-main" class="page-main">
+            <header id="main-header" class="main-header">
+                <h2>Your book shelf</h2>
+                <p>Here you can create a database of the books you have read, and the books you are wanting to read. Let you friends see your favorite page turners. Who knows maybe it will create some buzz.</p>
+            </header></p>
+                <div id="book-input" class="book-input">
+                    <div id="title-input" class="form-row title-input">
+                        <label for="title">Title:</label>
+                        <input type="text">
+                    </div>
+                    <div id="author-input" class="form-row author-input">
+                        <label for="author">Author:</label>
+                        <input type="text">
+                    </div>
+                    <div id="book-add" class="form-row book-add">
+                        <button>Submit</button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- This the container for the book archive -->
+            <section id="book-archive" class="book-archive">
+                <header id="archive-header" class="archive-header">
+                    <div id="title-heading" class="title-heading archive-row-label">
+                        <h3>Title</h3>
+                    </div>
+                    <div id="author-heading" class="author-heading archive-row-label">
+                        <h3>Author</h3>
+                    </div>
+                    <div id="status-heading" class="status-heading archive-row-label">
+                        <h3>Read Status</h3>
+                    </div>
+                    <div id="remove-heading" class="remove-heading archive-row-label">
+                        <h3 hidden>Remove</h3>
+                    </div>
+                </header>
+                <div id="archive-ledger" class="archive-ledger">
+                    <!-- Empty until books are entered -->
+                </div>
+            </section>
+        </main>
+
+    </div>
+</body>
+</html>
