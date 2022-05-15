@@ -6,6 +6,147 @@
   --brand-purple: #6247AA;
   --brand-blue: #102B3F;
   --brand-dark: #062726;
+  --light-font-color: #FFFAFA;
+  --med-background-colo: DCDCDC;
   --primary-font: 'Bree Serif', serif;
   --secondary-font: 'Lato', sans-serif; 
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+/*   border: solid 1px red; */
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  color: var(--brand-dark, darkslategrey);
+  
+  font-family: var(--primary-font, "Times New Roman", Times, serif, system-ui);
+  font-size: 100%;
+}
+
+.header-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: .5em 0;
+  
+  background-color: var(--brand-purple, rebeccapurple);
+}
+
+.page-header {
+  padding: .2em 1em;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  padding: .2em;
+  color: var(--light-font-color, snow);
+  text-decoration: none;
+  
+  font-size: 2rem;
+}
+
+.profile {
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container {
+  padding: .2em 1em;
+}
+
+.icon {
+  padding: .2em;
+  color: var(--light-font-color, snow);
+  text-decoration: none;
+  
+  font-size: 2rem;  
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header {
+  width: 50%;
+  margin: 1em auto;
+}
+
+.main-header p {
+  font-family: var(--secondary-font, Arial, Helvetica, sans-serif, system-ui);
+}
+
+.entry-form {
+  background-color: var(--med-background-color, gainsboro);
+  display: flex;
+  justify-content: center;
+}
+
+.form-row {
+  padding: 2em 0;
+  width: 30%;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: .7em;
+}
+
+.form-label {
+  font-size: 1.3em;
+}
+
+.form-row input {
+  width: 70%;
+  height: 2em;
+  border: 1px solid var(--brand-dark, darkslategrey);
+  border-radius: .3em;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-row button {
+  padding: .2em 1.5em;
+  border-radius: .2em;
+  background-color: var(--med-background-color, gainsboro);
+  color: var(--brand-purple, rebeccapurple);
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.button-row button:hover {
+  background-color: #D3D3D3;
+  color: var(--light-font-color, snow);
+}
+
+.archive-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-heading {
+  width: 25%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
